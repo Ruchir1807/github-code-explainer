@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>GitHub Explainer</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <img
+                src="icons/icon48.png"
+                alt="GitHub Explainer Logo"
+                class="logo">
+
+            <div>
+
+                <h1>
+                    GitHub Explainer
+                </h1>
+
+                <p class="subtitle">
+                    AI-powered code understanding
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- BUTTON -->
+        <button
+            id="analyzeBtn"
+            type="button">
+
+            Explain Selected Code
+
+        </button>
+
+        <!-- LOADING -->
+        <div
+            id="loading"
+            class="hidden">
+
+            <div class="spinner"></div>
+
+            <span>
+                Analyzing code...
+            </span>
+
+        </div>
+
+        <!-- RESULT -->
+        <div id="result"></div>
+
+    </div>
+    <script src="marked.min.js"></script>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>

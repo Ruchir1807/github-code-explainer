@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+
+  "name": "GitHub Code Explainer",
+
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "https://github.com/*",
+    "http://localhost:3000/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "action": {
+
+    "default_popup": "popup.html",
+
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+
+      "js": [
+        "content.js"
+      ],
+
+      "run_at": "document_idle"
+    }
+  ]
+}
