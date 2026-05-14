@@ -132,7 +132,7 @@ document
                         const aiResponse =
                             await fetch(
 
-                                "http://localhost:3000/explain",
+                                "https://github-code-explainer.onrender.com",
 
                                 {
                                     method: "POST",
