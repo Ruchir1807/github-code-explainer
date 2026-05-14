@@ -12,7 +12,7 @@
 
   "host_permissions": [
     "https://github.com/*",
-    "http://localhost:3000/*"
+    "https://github-code-explainer.onrender.com"
   ],
 
   "background": {
